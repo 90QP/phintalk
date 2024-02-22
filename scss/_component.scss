@@ -1,0 +1,71 @@
+.preview {
+  display: flex;
+  padding: 16px;
+  position: relative;
+
+  .preview_pic {
+    @include set-box(50px,50px,16px);
+
+    img {
+      @include set-box(50px,50px,16px);
+    }
+  }
+
+  .preview_pics {
+    @include set-box(50px,50px,16px);
+    
+
+    img {
+      @include set-box(23px,23px,8px);
+    }
+  }
+
+  .preview_title {
+    width: 50vw;
+    font-size: 0.9rem;
+    font-weight: 900;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    span {
+      display: inline-block;
+      color:#a5a4a8;
+      font-weight: 100;
+      font-size: 12px;
+      margin-left: 5px;
+    }
+  }
+
+  .preview_msg {
+    padding-top: 5px;
+    width: 50vw;
+    font-size: 0.88rem;
+    color:$gray1;
+
+    //2줄만 보이게 하기
+    display: -webkit-box;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .preview_time {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    font-size: 0.73rem;
+    letter-spacing: -0.25px;
+    color:$gray2;
+    font-weight: 100;
+    font-family: 'Pretendard-Regular';
+  }
+  .preview_col {
+        
+    &:nth-child(1) {
+      margin-right: 12px;
+    }
+  }
+}

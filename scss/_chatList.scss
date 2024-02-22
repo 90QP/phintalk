@@ -1,0 +1,15 @@
+.chats {
+  margin-left: 65px;
+
+  .preview_wrap {
+    display: block;
+    letter-spacing: -0.25px;
+
+    .preview {
+      &:hover {
+        background: $gray5
+      }
+
+    }
+  }
+}

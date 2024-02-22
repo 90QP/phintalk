@@ -1,0 +1,22 @@
+$bg-color:#9ecdf3;
+$main-color:#428DFF;
+$gray1:#78777a;
+$gray2:#c4c4c4;
+$gray3:#e6e4e4;
+$gray4:#f3f2f2;
+$gray5:#f2f5fa;
+$bg-grad:linear-gradient(360deg, rgba(178,227,212,1) -50%, rgba(158,205,243,1) 80%);
+
+$opacityBlack:rgba(0,0,0,0.2);
+
+
+@mixin set-box($height, $width:100%, $border-radius:0){
+  height:$height;
+  width: $width;
+  border-radius: $border-radius;
+}
+
+@mixin set-border($color:#afaeae, $width:1px, $radius:8px){
+  border:$color $width solid ;
+  border-radius: $radius;
+}
